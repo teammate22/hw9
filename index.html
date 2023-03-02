@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <nav class="navbar-expand bg-info">
+    <div class="container-fluid">
+      <div class="navbar">
+        <a href="#" class="navbar-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+            <path
+              d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
+          </svg>
+        </a>
+        <div class="navbar-nav justify-self-start">
+          <a class="nav-link active" aria-current="page" href="#">Attendance</a>
+          <a class="nav-link" href="#">Schedule</a>
+          <a class="nav-link" href="#">Homework</a>
+        </div>
+        <div class="navbar">
+          <div class="navbar-nav">
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-bell-fill"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-door-open-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center my-4">23 February, Thursday</h1>
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">1 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">2 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">3 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">4 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">5 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">6 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">7 lesson</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">8 lesson</a></li>
+  </ul>
+
+  <div class="d-flex justify-content-between mx-5 mt-3">
+    <div class="d-flex flex-column">
+      <div class="text-muted small">Group</div>
+      <div>Avengers</div>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="text-muted small">Subject</div>
+      <div>HTML & CSS</div>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="text-muted small">Lesson topic</div>
+      <div><input type="text" class="form-control"></div>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="text-muted small">Homework</div>
+      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Add
+        homework</button>
+
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">New homework</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="m-1">Topic:</p>
+              <input type="text" class="w-100 form-control">
+              <input class="form-control my-2" type="file">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <table class="table mt-3">
+    <thead class="text-white bg-primary">
+      <tr>
+        <th>Name</th>
+        <th>GPA</th>
+        <th>Is present</th>
+        <th>Test</th>
+        <th>Homework</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>1. Tony Stark</td>
+      <td>10</td>
+      <td>
+        <input class="form-check-input bg-success" type="radio" name="check">
+        <input class="form-check-input bg-warning" type="radio" name="check">
+        <input class="form-check-input bg-danger" type="radio" name="check">
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Test grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Home grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>2. Bruce Banner</td>
+      <td>7</td>
+      <td>
+        <input class="form-check-input bg-success" type="radio" name="check2">
+        <input class="form-check-input bg-warning" type="radio" name="check2">
+        <input class="form-check-input bg-danger" type="radio" name="check2">
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Test grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Home grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>3. Steven Rogers</td>
+      <td>8</td>
+      <td>
+        <input class="form-check-input bg-success" type="radio" name="check3">
+        <input class="form-check-input bg-warning" type="radio" name="check3">
+        <input class="form-check-input bg-danger" type="radio" name="check3">
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Test grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Home grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>4. T'Challa</td>
+      <td>9</td>
+      <td>
+        <input class="form-check-input bg-success" type="radio" name="check4">
+        <input class="form-check-input bg-warning" type="radio" name="check4">
+        <input class="form-check-input bg-danger" type="radio" name="check4">
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Test grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Home grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>5. Thor Odinson</td>
+      <td>6</td>
+      <td>
+        <input class="form-check-input bg-success" type="radio" name="check5">
+        <input class="form-check-input bg-warning" type="radio" name="check5">
+        <input class="form-check-input bg-danger" type="radio" name="check5">
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Test grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Home grade
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bad</a></li>
+            <li><a class="dropdown-item" href="#">Not bad</a></li>
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item" href="#">Good</a></li>
+            <li><a class="dropdown-item" href="#">Perfect</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <td>6. Clinton Barton</td>
+    <td>8</td>
+    <td>
+      <input class="form-check-input bg-success" type="radio" name="check6">
+      <input class="form-check-input bg-warning" type="radio" name="check6">
+      <input class="form-check-input bg-danger" type="radio" name="check6">
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Test grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Home grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <td>7. Natasha Romanoff</td>
+    <td>10</td>
+    <td>
+      <input class="form-check-input bg-success" type="radio" name="check7">
+      <input class="form-check-input bg-warning" type="radio" name="check7">
+      <input class="form-check-input bg-danger" type="radio" name="check7">
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Test grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Home grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <td>8. Mark Spector</td>
+    <td>7</td>
+    <td>
+      <input class="form-check-input bg-success" type="radio" name="check8">
+      <input class="form-check-input bg-warning" type="radio" name="check8">
+      <input class="form-check-input bg-danger" type="radio" name="check8">
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Test grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Home grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <td>9. Peter Parker</td>
+    <td>10</td>
+    <td>
+      <input class="form-check-input bg-success" type="radio" name="check9">
+      <input class="form-check-input bg-warning" type="radio" name="check9">
+      <input class="form-check-input bg-danger" type="radio" name="check9">
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Test grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Home grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+    <td>10. Scott Lang</td>
+    <td>8</td>
+    <td>
+      <input class="form-check-input bg-success" type="radio" name="check1">
+      <input class="form-check-input bg-warning" type="radio" name="check1">
+      <input class="form-check-input bg-danger" type="radio" name="check1">
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Test grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Home grade
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bad</a></li>
+          <li><a class="dropdown-item" href="#">Not bad</a></li>
+          <li><a class="dropdown-item" href="#">Normal</a></li>
+          <li><a class="dropdown-item" href="#">Good</a></li>
+          <li><a class="dropdown-item" href="#">Perfect</a></li>
+        </ul>
+      </div>
+    </td>
+    <td><textarea class="form-control" rows="1"></textarea></td>
+    </tr>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
