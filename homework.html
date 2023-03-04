@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <nav class="navbar-expand bg-info">
+    <div class="container-fluid">
+      <div class="navbar">
+        <a href="#" class="navbar-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+            <path
+              d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
+          </svg>
+        </a>
+        <div class="navbar-nav justify-self-start">
+          <a class="nav-link" href="index.html">Attendance</a>
+          <a class="nav-link" href="#">Schedule</a>
+          <a class="nav-link active" aria-current="page" href="#">Homework</a>
+        </div>
+        <div class="navbar">
+          <div class="navbar-nav">
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-bell-fill"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-door-open-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center my-4">Homework</h1>
+
+  <div class="d-flex mx-5 mt-3 gap-5">
+    <div class="d-flex flex-column">
+      <div class="text-muted small">Group</div>
+      <div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Select group
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Avengers</a></li>
+            <li><a class="dropdown-item" href="#">X-men</a></li>
+            <li><a class="dropdown-item" href="#">Fantastic Four</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="text-muted small">Subject</div>
+      <div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Select subject
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">HTML & CSS</a></li>
+            <li><a class="dropdown-item" href="#">C++</a></li>
+            <li><a class="dropdown-item" href="#">JS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info px-4 h-50 align-self-end">Show</button>
+  </div>
+
+  <table class="table mt-3">
+    <thead class="text-white bg-primary">
+      <tr>
+        <th>Student</th>
+        <th>28/02</th>
+        <th>02/03</th>
+        <th>07/03</th>
+        <th>09/03</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>1. Tony Stark</td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+    </tr>
+
+    <tr>
+      <td>2. Bruce Banner</td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+    </tr>
+
+    <tr>
+      <td>3. Steven Rogers</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+    </tr>
+
+    <tr>
+      <td>4. T'Challa</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+    </tr>
+
+    <tr>
+      <td>5. Thor Odinson</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td><i class="bi bi-dash-lg"></i></td>
+    </tr>
+
+    <tr>
+      <td>6. Clinton Barton</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+    </tr>
+
+    <tr>
+      <td>7. Natasha Romanoff</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+    </tr>
+
+    <tr>
+      <td>9. Peter Parker</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+    </tr>
+
+    <tr>
+      <td>10. Scott Lang</td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+    </tr>
+
+    <tr>
+      <td>8. Mark Spector</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+        </svg>
+        <input type="number" class="input-group" placeholder="1 to 10" min="1" max="10">
+      </td>
+      <td><i class="bi bi-dash-lg"></i></td>
+      <td><i class="bi bi-dash-lg"></i></td>
+    </tr>
+  </table>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
